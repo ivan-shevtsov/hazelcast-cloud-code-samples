@@ -18,7 +18,7 @@
 
     <properties>
         <hazelcast-all.version>4.1</hazelcast-all.version>
-        <testcontainers.version>1.15.0</testcontainers.version>
+        <testcontainers.version>1.16.2</testcontainers.version>
         <junit.version>4.13</junit.version>
         <logback-classic.version>1.2.3</logback-classic.version>
         <assertj-core.version>3.16.0</assertj-core.version>

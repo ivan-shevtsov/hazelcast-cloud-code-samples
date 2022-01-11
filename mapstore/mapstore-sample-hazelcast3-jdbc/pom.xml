@@ -18,7 +18,7 @@
 
     <properties>
         <hazelcast-all.version>3.12.10</hazelcast-all.version>
-        <testcontainers.version>1.15.0</testcontainers.version>
+        <testcontainers.version>1.16.2</testcontainers.version>
         <mysql.version>8.0.15</mysql.version>
         <HikariCP.version>3.4.5</HikariCP.version>
         <junit.version>4.13</junit.version>
