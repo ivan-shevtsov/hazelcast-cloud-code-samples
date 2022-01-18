@@ -24,13 +24,13 @@ public class JpaPersonMapStore implements MapStore<Integer, Person>, MapLoaderLi
 
     @Override
     public void init(HazelcastInstance hazelcastInstance, Properties properties, String mapName) {
-        log.info("JpaPersonMapStore::initializing");
-        this.applicationContext.getEnvironment().getPropertySources().addFirst(new PropertiesPropertySource(
-            "JpaPersonMapStore", properties));
+        log.info(String.format("JpaPersonMapStore(%s)::initializing", mapName));
+        this.applicationContext.getEnvironment().getPropertySources().addFirst(
+            new PropertiesPropertySource("JpaPersonMapStore", properties));
         this.applicationContext.register(JpaConfig.class);
         this.applicationContext.refresh();
         this.personRepository = this.applicationContext.getBean(PersonRepository.class);
-        log.info("JpaPersonMapStore::initialized");
+        log.info(String.format("JpaPersonMapStore(%s)::initialized", mapName));
     }
 
     @Override
