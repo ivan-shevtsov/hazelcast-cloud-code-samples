@@ -1,0 +1,22 @@
+# Caching with MapStore Samples
+:experimental: true
+
+link:https://docs.hazelcast.com/hazelcast/latest/data-structures/working-with-external-data[MapStore] is an API for building a cache on top of Hazelcast. The link:https://docs.hazelcast.org/docs/latest/javadoc/com/hazelcast/map/MapStore.html[MapStore interface] includes methods that are triggered when operations are invoked on a map. You can implement your own logic in these methods to load data from an external data store or write data back to it. For example, when a map entry is read with the `map.get()` method, the `load()` method of the MapStore is invoked.
+
+MapStore extends the MapLoader interface with the methods to store and delete data in the external data source, whereas MapLoader contains the methods to load data into Hazelcast. You can use either of these interfaces to meet your requirements, but this sample refers to both interfaces as _MapStore_.
+
+## How to run a sample?
+
+MapStore samples can be easily built with the maven wrapper. You also need JDK 1.8.
+
+- Clone this GitHub repository.
+- Open one of the sample project directories such as xref:mapstore-sample-hazelcast5-mongodb/README.adoc[`mapstore-sample-hazelcast5-mongodb`].
+- Execute `./mvnw clean verify` to build and run the sample.
+
+TIP: The `mapstore-sample-hazelcast5-mongodb` sample comes with a link:https://xenodochial-spence-280948.netlify.app/cloud/mapstore-mongodb[complete guide for building and running the sample in Hazelcast Serverless].
+
+== FAQ
+
+- Why do we need to use `maven-shade-plugin`?
+
+> To make sure that your project's dependencies do not conflict with those that are built into Hazelcast Cloud. See link:https://xenodochial-spence-280948.netlify.app/cloud/cluster-side-modules[Working with Cluster-Side Modules in Hazelcast Cloud]

@@ -1,0 +1,29 @@
+= Use Hazelcast Cloud as a Write-Behind Cache with MongoDB
+:experimental: true
+
+This is an example of how to use `MapStore` and `MongoDB`.
+
+== Quickstart
+
+Required properties:
+
+- `uri`: link:https://docs.mongodb.com/manual/reference/connection-string/[MongoDB connection string]
+- `database`: Name of your MongoDB database
+
+Required elements for `hazelcast-cloud-maven-plugin` in the POM:
+
+- `clusterName`: Name of your Hazelcast cluster
+- `apiKey`: API key
+- `apiSecret`: API secret
+
+See the link:https://xenodochial-spence-280948.netlify.app/cloud/mapstore-mongodb[complete guide for building and running this sample in Hazelcast Serverless].
+
+== Classes
+
+- [Person](src/main/java/sample/com/hazelcast/cloud/mapstore5/mongo/Person.java) Entity class
+- [MongoPersonRepository](src/main/java/sample/com/hazelcast/cloud/mapstore5/mongo/MongoPersonRepository.java)
+  MongoDB implementation for Person Entity.
+- [PersonMapStore](src/main/java/sample/com/hazelcast/cloud/mapstore5/mongo/MongoPersonMapStore.java) MapStore
+  implementation for Person Entity.
+- [PersonMapStoreTest](src/test/java/sample/com/hazelcast/cloud/mapstore5/mongo/MongoPersonMapStoreTest.java)
+  Person MapStore tests.
