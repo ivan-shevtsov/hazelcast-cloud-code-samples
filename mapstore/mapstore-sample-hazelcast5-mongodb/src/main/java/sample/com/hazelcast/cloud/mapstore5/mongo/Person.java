@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+// tag::class[]
 public class Person implements Serializable {
 
     private Integer id;
@@ -44,3 +45,4 @@ public class Person implements Serializable {
     }
 
 }
+// end::class[]

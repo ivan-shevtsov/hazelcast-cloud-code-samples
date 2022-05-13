@@ -16,6 +16,7 @@ import com.hazelcast.map.MapLoaderLifecycleSupport;
 import com.hazelcast.map.MapStore;
 
 @Slf4j
+// tag::class[]
 public class MongoPersonMapStore implements MapStore<Integer, Person>, MapLoaderLifecycleSupport {
 
     private MongoClient mongoClient;
@@ -97,3 +98,4 @@ public class MongoPersonMapStore implements MapStore<Integer, Person>, MapLoader
     }
 
 }
+// end::class[]

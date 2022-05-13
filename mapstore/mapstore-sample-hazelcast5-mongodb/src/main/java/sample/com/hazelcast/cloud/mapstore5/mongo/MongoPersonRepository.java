@@ -18,6 +18,7 @@ import org.bson.Document;
 
 @Slf4j
 @AllArgsConstructor
+// tag::class[]
 public class MongoPersonRepository implements PersonRepository {
 
     private final String name;
@@ -76,3 +77,4 @@ public class MongoPersonRepository implements PersonRepository {
     }
 
 }
+// end::class[]
