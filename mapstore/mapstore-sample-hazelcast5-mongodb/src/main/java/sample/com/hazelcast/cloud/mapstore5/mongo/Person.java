@@ -1,4 +1,4 @@
-package sample.com.hazelcast.cloud.mapstore4.mongo;
+package sample.com.hazelcast.cloud.mapstore5.mongo;
 
 import java.io.Serializable;
 

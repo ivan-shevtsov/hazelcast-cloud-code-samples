@@ -1,4 +1,4 @@
-package sample.com.hazelcast.cloud.mapstore4.mongo;
+package sample.com.hazelcast.cloud.mapstore5.mongo;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -13,10 +13,10 @@ import org.junit.BeforeClass;
 import org.junit.ClassRule;
 import org.junit.Test;
 import org.testcontainers.containers.GenericContainer;
-import sample.com.hazelcast.cloud.mapstore4.mongo.MongoPersonMapStore;
-import sample.com.hazelcast.cloud.mapstore4.mongo.MongoPersonRepository;
-import sample.com.hazelcast.cloud.mapstore4.mongo.Person;
-import sample.com.hazelcast.cloud.mapstore4.mongo.PersonRepository;
+import sample.com.hazelcast.cloud.mapstore5.mongo.MongoPersonMapStore;
+import sample.com.hazelcast.cloud.mapstore5.mongo.MongoPersonRepository;
+import sample.com.hazelcast.cloud.mapstore5.mongo.Person;
+import sample.com.hazelcast.cloud.mapstore5.mongo.PersonRepository;
 
 import com.hazelcast.config.Config;
 import com.hazelcast.config.MapConfig;
@@ -36,7 +36,7 @@ public class MongoPersonMapStoreTest {
     public static final GenericContainer<?> MONGO_DB_CONTAINER = new GenericContainer<>("mongo:latest")
         .withExposedPorts(MONGO_PORT);
 
-    private static final String MAP_NAME = "person";
+    private static final String MAP_NAME = "people";
 
     private static HazelcastInstance hazelcast;
 
