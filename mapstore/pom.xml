@@ -22,6 +22,7 @@
         <module>mapstore-sample-hazelcast3-mongodb</module>
         <module>mapstore-sample-hazelcast4-mongodb</module>
         <module>mapstore-sample-hazelcast4-spring-data-jpa</module>
+        <module>mapstore-sample-hazelcast5-mongodb</module>
     </modules>
 
 
