@@ -20,10 +20,10 @@ See the link:https://xenodochial-spence-280948.netlify.app/cloud/mapstore-mongod
 
 == Classes
 
-- [Person](src/main/java/sample/com/hazelcast/cloud/mapstore5/mongo/Person.java) Entity class
-- [MongoPersonRepository](src/main/java/sample/com/hazelcast/cloud/mapstore5/mongo/MongoPersonRepository.java)
+- xref:src/main/java/sample/com/hazelcast/cloud/mapstore5/mongo/Person.java[Person] Entity class
+- xref:src/main/java/sample/com/hazelcast/cloud/mapstore5/mongo/MongoPersonRepository.java[MongoPersonRepository]
   MongoDB implementation for Person Entity.
-- [PersonMapStore](src/main/java/sample/com/hazelcast/cloud/mapstore5/mongo/MongoPersonMapStore.java) MapStore
+- xref:src/main/java/sample/com/hazelcast/cloud/mapstore5/mongo/MongoPersonMapStore.java[PersonMapStore] MapStore
   implementation for Person Entity.
-- [PersonMapStoreTest](src/test/java/sample/com/hazelcast/cloud/mapstore5/mongo/MongoPersonMapStoreTest.java)
+- xref:src/test/java/sample/com/hazelcast/cloud/mapstore5/mongo/MongoPersonMapStoreTest.java[PersonMapStoreTest]
   Person MapStore tests.
