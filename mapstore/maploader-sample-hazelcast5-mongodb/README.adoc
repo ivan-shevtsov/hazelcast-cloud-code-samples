@@ -1,0 +1,19 @@
+= Use Hazelcast Cloud as a Read-Through Cache with MongoDB
+:experimental: true
+
+This is an example of how to use the MapStore API as a read-through cache, using a sample dataset from MongoDB.
+
+== Quickstart
+
+Required properties:
+
+- `uri`: link:https://docs.mongodb.com/manual/reference/connection-string/[MongoDB connection string]
+- `database`: Name of your MongoDB database
+
+Required configuration for `hazelcast-cloud-maven-plugin` in the POM:
+
+- `clusterName`: Name of your Hazelcast cluster
+- `apiKey`: API key
+- `apiSecret`: API secret
+
+See the link:https://xenodochial-spence-280948.netlify.app/cloud/mapstore-mongodb[complete guide for building and running this sample in Hazelcast Serverless].
