@@ -15,6 +15,11 @@ import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.map.MapLoaderLifecycleSupport;
 import com.hazelcast.map.MapStore;
 
+/*
+* Snippets of this code are included as examples in our documentation,
+* using the tag:: comments.
+*/
+
 @Slf4j
 // tag::class[]
 public class MongoPersonMapStore implements MapStore<Integer, Person>, MapLoaderLifecycleSupport {
@@ -22,7 +27,8 @@ public class MongoPersonMapStore implements MapStore<Integer, Person>, MapLoader
     private MongoClient mongoClient;
 
     private PersonRepository personRepository;
-
+    
+    // interesting comment
     @Override
     public void init(HazelcastInstance hazelcastInstance, Properties properties, String mapName) {
         this.mongoClient = new MongoClient(new MongoClientURI(properties.getProperty("uri")));

@@ -93,6 +93,11 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--
+            Snippets of this code are included
+            as examples in our documentation,
+            using the tag:: comments.
+            -->
             <!-- tag::maven-plugin[] -->
             <plugin>
                 <groupId>com.hazelcast.cloud</groupId>

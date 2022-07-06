@@ -16,6 +16,11 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.bson.Document;
 
+/*
+* Snippets of this code are included as examples in our documentation,
+* using the tag:: comments.
+*/
+
 @Slf4j
 @AllArgsConstructor
 // tag::class[]
