@@ -1,0 +1,29 @@
+= Use Hazelcast as a Write-Through Cache with MongoDB
+:experimental: true
+
+This is an example of how to use MapStore and MongoDB with Hazelcast Viridian.
+
+TIP: For step-by-step instructions of how to run this app, see the link:https://docs.hazelcast.com/tutorials/write-through-cache-serverless-mapstore[tutorial].
+
+== Quickstart
+
+Required properties:
+
+- `uri`: link:https://docs.mongodb.com/manual/reference/connection-string/[MongoDB connection string]
+- `database`: Name of your MongoDB database
+
+Required elements for `hazelcast-cloud-maven-plugin` in the POM:
+
+- `clusterName`: Name of your Hazelcast cluster
+- `apiKey`: API key
+- `apiSecret`: API secret
+
+== Classes
+
+- xref:src/main/java/sample/com/hazelcast/cloud/mapstore5/mongo/Person.java[Person] Entity class
+- xref:src/main/java/sample/com/hazelcast/cloud/mapstore5/mongo/MongoPersonRepository.java[MongoPersonRepository]
+  MongoDB implementation for Person Entity.
+- xref:src/main/java/sample/com/hazelcast/cloud/mapstore5/mongo/MongoPersonMapStore.java[PersonMapStore] MapStore
+  implementation for Person Entity.
+- xref:src/test/java/sample/com/hazelcast/cloud/mapstore5/mongo/MongoPersonMapStoreTest.java[PersonMapStoreTest]
+  Person MapStore tests.
