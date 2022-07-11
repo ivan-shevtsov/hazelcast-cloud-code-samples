@@ -1,9 +1,9 @@
 = Use Hazelcast as a Write-Through Cache with MongoDB
 :experimental: true
 
-This is an example of how to use MapStore and MongoDB.
+This is an example of how to use MapStore and MongoDB with Hazelcast Viridian.
 
-TIP: For step-by-step instructions, see the link:https://xenodochial-spence-280948.netlify.app/cloud/mapstore-mongodb[tutorial].
+TIP: For step-by-step instructions of how to run this app, see the link:https://docs.hazelcast.com/tutorials/write-through-cache-serverless-mapstore[tutorial].
 
 == Quickstart
 
