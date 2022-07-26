@@ -1,4 +1,4 @@
-package sample.com.hazelcast.demo.cloud;
+package sample.com.hazelcast.demo.viridian;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -14,25 +14,25 @@ import com.hazelcast.client.config.ClientConfig;
 import com.hazelcast.config.SSLConfig;
 
 @SpringBootApplication
-public class HzCloudDemoApplication {
+public class HzViridianDemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HzCloudDemoApplication.class, args);
+        SpringApplication.run(HzViridianDemoApplication.class, args);
     }
 
     @ConditionalOnProperty(
-        name = "hazelcast.cloud.tlsEnabled",
+        name = "hazelcast.viridian.tlsEnabled",
         havingValue = "true"
     )
     @Bean
     ClientConfig hazelcastClientConfig(
-        @Value("${hazelcast.cloud.discoveryToken}") String discoveryToken,
-        @Value("${hazelcast.cloud.url}") String url,
-        @Value("${hazelcast.cloud.clusterName}") String clusterName,
-        @Value("${hazelcast.cloud.keyStore}") Resource keyStore,
-        @Value("${hazelcast.cloud.keyStorePassword}") String keyStorePassword,
-        @Value("${hazelcast.cloud.trustStore}") Resource trustStore,
-        @Value("${hazelcast.cloud.trustStorePassword}") String trustStorePassword
+        @Value("${hazelcast.viridian.discoveryToken}") String discoveryToken,
+        @Value("${hazelcast.viridian.url}") String url,
+        @Value("${hazelcast.viridian.clusterName}") String clusterName,
+        @Value("${hazelcast.viridian.keyStore}") Resource keyStore,
+        @Value("${hazelcast.viridian.keyStorePassword}") String keyStorePassword,
+        @Value("${hazelcast.viridian.trustStore}") Resource trustStore,
+        @Value("${hazelcast.viridian.trustStorePassword}") String trustStorePassword
     ) throws IOException {
         Properties props = new Properties();
         props.setProperty("javax.net.ssl.keyStore", keyStore.getURI().getPath());

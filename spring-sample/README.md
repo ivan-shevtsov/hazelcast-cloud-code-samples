@@ -13,11 +13,11 @@ Once Hazelcast cluster is created in Viridian then <code>Cluster Name</code>, <c
 <p>
 - Zip archive with Keystore should be downloaded and extracted to <code>spring-sample/src/main/resources</code><br>
 - <code>Cluster Name</code> should be added in <code>spring-sample/src/main/resources/application.properties</code> 
-for property <code>hazelcast.cloud.clusterName</code><br>
+for property <code>hazelcast.viridian.clusterName</code><br>
 - <code>Discovery Token</code> should be added in <code>spring-sample/src/main/resources/application.properties</code> 
-for property <code>hazelcast.cloud.discoveryToken</code><br>
+for property <code>hazelcast.viridian.discoveryToken</code><br>
 - <code>Keystore Passwords</code> should be added in <code>spring-sample/src/main/resources/application.properties</code> 
-for properties <code>hazelcast.cloud.keyStorePassword</code> and <code>hazelcast.cloud.trustStorePassword</code> <br>
+for properties <code>hazelcast.viridian.keyStorePassword</code> and <code>hazelcast.viridian.trustStorePassword</code> <br>
 
 <h3>Launch Spring boot application</h3>
 Execute next command from <code>spring-sample</code> folder to launch application
@@ -43,7 +43,7 @@ Add dependency for Hazelcast Client to the project. For Maven project add next s
 ```
 
 <p>
-Add managed @Bean of type <code>com.hazelcast.client.config.ClientConfig</code> as this is done in <code>HzCloudDemoApplication.java</code>.
+Add managed @Bean of type <code>com.hazelcast.client.config.ClientConfig</code> as this is done in <code>HzViridianDemoApplication.java</code>.
 <p>
 Add configuration to the <code>spring-sample/src/main/resources/application.properties</code> 
 as described above at Configuration for Hazelcast Viridian Cluster.

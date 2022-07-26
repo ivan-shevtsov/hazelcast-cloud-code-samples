@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.hazelcast.demo</groupId>
-    <artifactId>hz-cloud-demo</artifactId>
+    <artifactId>hz-viridian-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hz-cloud-demo</name>
-    <description>hz-cloud-demo</description>
+    <name>hz-viridian-demo</name>
+    <description>hz-viridian-demo</description>
     <properties>
         <java.version>11</java.version>
     </properties>
