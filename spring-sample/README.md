@@ -1,13 +1,13 @@
-#Spring Boot Application with Hazelcast Cloud Cluster
+#Spring Boot Application with Hazelcast Viridian Cluster
 
 <h3>Spring Boot Sample Application</h3>
 <p>
 This project contains a minimal configuration to launch Spring Boot application and establish connection to
-Hazelcast Cloud Cluster.
+Hazelcast Viridian Cluster.
 
-<h3>Configuration for Hazelcast Cloud Cluster</h3>
+<h3>Configuration for Hazelcast Viridian Cluster</h3>
 <p>
-Once Hazelcast cluster is created in Cloud then <code>Cluster Name</code>, <code>Discovery Token</code>, 
+Once Hazelcast cluster is created in Viridian then <code>Cluster Name</code>, <code>Discovery Token</code>, 
 <code>Keystore</code> and <code>Keystore Passwords</code> can be found in 
 <code>Connect Your Application</code>  - <code>Advanced Setup</code>
 <p>
@@ -46,8 +46,8 @@ Add dependency for Hazelcast Client to the project. For Maven project add next s
 Add managed @Bean of type <code>com.hazelcast.client.config.ClientConfig</code> as this is done in <code>HzCloudDemoApplication.java</code>.
 <p>
 Add configuration to the <code>spring-sample/src/main/resources/application.properties</code> 
-as described above at Configuration for Hazelcast Cloud Cluster.
+as described above at Configuration for Hazelcast Viridian Cluster.
 <p>
 Once all these are completed, instance of <code>com.hazelcast.core.HazelcastInstance</code> can be Injected into application classes 
 (as it done in <code>SomeService</code> class). This will be fully initialized client with established connection to
-Hazelcast Cluster in Cloud.
+Hazelcast Cluster in Viridian.
