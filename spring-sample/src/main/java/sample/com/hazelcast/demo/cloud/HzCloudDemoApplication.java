@@ -1,4 +1,4 @@
-package com.hazelcast.demo.cloud;
+package sample.com.hazelcast.demo.cloud;
 
 import java.io.IOException;
 import java.util.Properties;

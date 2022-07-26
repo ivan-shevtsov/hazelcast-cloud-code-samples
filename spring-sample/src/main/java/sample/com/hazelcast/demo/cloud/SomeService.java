@@ -1,4 +1,4 @@
-package com.hazelcast.demo.cloud;
+package sample.com.hazelcast.demo.cloud;
 
 import java.util.Map;
 import java.util.UUID;
