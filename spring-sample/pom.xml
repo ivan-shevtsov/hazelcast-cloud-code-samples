@@ -24,7 +24,7 @@
 
         <dependency>
             <groupId>com.hazelcast</groupId>
-            <artifactId>hazelcast</artifactId>
+            <artifactId>hazelcast-enterprise</artifactId>
             <version>5.1.2</version>
         </dependency>
 
@@ -43,5 +43,13 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>hazelcast-ee</id>
+            <name>Sonatype Repository</name>
+            <url>https://repository.hazelcast.com/release</url>
+        </repository>
+    </repositories>
 
 </project>
